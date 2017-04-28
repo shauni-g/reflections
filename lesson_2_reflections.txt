@@ -1,0 +1,46 @@
+What happens when you initialize a repository? Why do you need to do it?
+    
+    An area is created in Git to place files that you wish to have versions
+    kept of. This needs to be done so Git can create all the neccessary files
+    it requires to make the version control work correctly.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+    The staging area is for files that are ready to go to the repository so,
+    unlike the working directory, no more modifying will take place on files
+    there, but it is not neccessarily time for a full commit yet, as other files
+    might need to be modified first so it files in the staging area are not
+    added to the version branch yet. This gives means it is possible for you to
+    effectively mark files as ready to go to the repository so they don't get
+    forgotten about when the correct time for a commit comes.
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+    See above.
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+    If you wanted to start making some changes that aren't part of the main
+    design for a program a branch would be helpful. The branch would keep any
+    of these "extra" changes separate from the main version.
+
+How do the diagrams help you visualize the branch structure?
+
+    It gives form to the tree-like analogy being used.
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+    The result of merging two branches together is a hybrid file with histories
+    from both branches attached to it.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+
+    Pro - most of the time it is quicker and easier for Git to merge two
+          branches than it is for a human.
+    Con - when there are conflicts in the changes made in the two branches it
+          might actually be more work trying to tell Git which changes to take.
